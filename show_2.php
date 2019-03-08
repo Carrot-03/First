@@ -1,0 +1,13 @@
+<?PHP
+$a="退出登录";
+$e=$_POST["tuichu"];
+if($e==$a)
+{
+    setcookie('login',0);
+    setcookie('remember',0);
+    exit("<script>
+            alert('退出登录！');
+            location.href='test.php';
+            </script>");
+}
+?>
